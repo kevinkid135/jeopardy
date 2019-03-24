@@ -1,0 +1,57 @@
+html, body{
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+table {
+    /*horizontal center*/
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+
+    /*Span table to entire page*/
+    width: 100%;
+    height: 100%;
+
+    background-color: black;
+}
+
+th {
+    /*Categories*/
+    color: white;
+    padding: 20px;
+    font-size: 3vw;
+}
+
+td {
+    /*Category Options ($)*/
+    color: gold;
+    font-size: 8vw;
+    background-image: linear-gradient(to bottom right, blue, darkblue, blue);
+    
+}
+
+th, td {
+    /*
+    (100 / number of columns)
+    */
+    width: 33%; 
+
+    /*
+    (100 / number rows)
+    */
+    height: 25%;
+    
+    /*Mimic the Jeopardy font*/
+    font-family: "Swiss 911";
+    letter-spacing: 4px;
+    text-shadow: 6px 6px black;
+    text-align: center;
+    background-color: darkblue;
+}
+
+table, th, td {
+    border: 5px solid black;
+}
