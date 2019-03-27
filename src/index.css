@@ -4,6 +4,12 @@ html, body{
     width: 100%;
 }
 
+:root {
+	--google-blue: rgb(66,133,244);
+	--google-red: rgb(219,68,55);
+	--google-yellow: rgb(244,160,0);
+}
+
 #gridContainer {
     height: 100%;
     display: grid;
@@ -17,18 +23,17 @@ html, body{
     height: 100%;
     position: relative;
 
-    /*Mimic the Jeopardy font*/
-    color: gold;
+    color: var(--google-yellow);
     font-family: "Swiss 911";
     letter-spacing: 4px;
-    text-shadow: 6px 6px black;
+    text-shadow: 3px 3px black;
     text-align: center;
     background-color: darkblue;
 }
 
 .itemTitle {
     color: white;
-    background-color: blue;
+    background-color: var(--google-blue);
     font-size: 3vw;
 }
 
@@ -50,12 +55,12 @@ html, body{
 }
 
 .points {
-    background-image: linear-gradient(to bottom right, blue, darkblue, blue);
+    background-image: linear-gradient(to bottom right, var(--google-blue), lightblue, var(--google-blue));
     font-size: 7vw;
 }
 
 .question {
-    background-color: blue;
+    background-color: white;
     font-size: 2vw;
 }
 
