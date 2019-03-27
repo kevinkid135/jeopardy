@@ -4,47 +4,21 @@ html, body{
     width: 100%;
 }
 
-table {
-    /*horizontal center*/
-    position: absolute;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
-
-    /*Span table to entire page*/
-    width: 100%;
+#gridContainer {
     height: 100%;
-
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto 17% 17% 17% 17%;
+    grid-gap: 10px;
     background-color: black;
 }
 
-th {
-    /*Categories*/
-    color: white;
-    padding: 20px;
-    font-size: 3vw;
-}
+.item {
+    height: 100%;
+    position: relative;
 
-td {
-    /*Category Options ($)*/
-    color: gold;
-    font-size: 8vw;
-    background-image: linear-gradient(to bottom right, blue, darkblue, blue);
-    
-}
-
-th, td {
-    /*
-    (100 / number of columns)
-    */
-    width: 33%; 
-
-    /*
-    (100 / number rows)
-    */
-    height: 25%;
-    
     /*Mimic the Jeopardy font*/
+    color: gold;
     font-family: "Swiss 911";
     letter-spacing: 4px;
     text-shadow: 6px 6px black;
@@ -52,6 +26,45 @@ th, td {
     background-color: darkblue;
 }
 
-table, th, td {
-    border: 5px solid black;
+.itemTitle {
+    color: white;
+    background-color: blue;
+    font-size: 3vw;
+}
+
+.itemOption {
+    /*background-image: linear-gradient(to bottom right, blue, darkblue, blue);*/
+    background-color: black;
+}
+
+.centerContents {
+    /*all sibling elements will overlap each other*/
+    position: absolute;
+
+    /* Flexbox to center text */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.points {
+    background-image: linear-gradient(to bottom right, blue, darkblue, blue);
+    font-size: 7vw;
+}
+
+.question {
+    background-color: blue;
+    font-size: 2vw;
+}
+
+.answer {
+    background-color: teal;
+    font-size: 4vw;
+}
+
+audio {
+    padding: 10%;
+    width: 80%;
 }

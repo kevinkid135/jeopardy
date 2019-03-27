@@ -2,35 +2,94 @@
 <html>
 <head>
     <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/javascript"></script>
     <link href="https://db.onlinewebfonts.com/c/6a891befed317fa85014538362250762?family=Swiss+911" rel="stylesheet" type="text/css"/>
 
 
     <link rel="stylesheet" type="text/css" href="./index.css">
+    <link rel="stylesheet" type="text/css" href="./questionImg.css">
 
 </head>
 <body>
-<table>
-    <tr>
-        <th>NAME THE INSTRUMENT</th>
-        <th>NAME THE INSTRUMENT FAMILY</th>
-        <th>GUESS THE SONG</th>
-    </tr>
-    <tr>
-        <td>$100</td>
-        <td>$100</td>
-        <td>$100</td>
-    </tr>
-    <tr>
-        <td>$200</td>
-        <td>$200</td>
-        <td>$200</td>
-    </tr>
-    <tr>
-        <td>$300</td>
-        <td>$300</td>
-        <td>$300</td>
-    </tr>
-</table>
+<div id="gridContainer">
+    <div class="item itemTitle">
+        <div class="centerContents">NAME THE INSTRUMENT</div>
+    </div>
+    <div class="item itemTitle">
+        <div class="centerContents">NAME THE INSTRUMENT FAMILY</div>
+    </div>
+    <div class="item itemTitle">
+        <div class="centerContents">GUESS THE SONG</div>
+    </div>  
+    <div class="item itemOption">
+        <div class="centerContents answer">Guitar</div>
+        <div class="centerContents question"><div id="guitar" class="questionPic"></div></div>
+        <div class="centerContents points">$100</div>
+    </div>
+    <div class="item itemOption">
+        <div class="centerContents answer">Brass</div>
+        <div class="centerContents question"><div id="trombone" class="questionPic"></div></div>
+        <div class="centerContents points">$200</div>
+    </div>
+    <div class="item itemOption">
+        <div class="centerContents answer">Smash</div>
+        <div class="centerContents question">
+            <audio controls><source src="./music/test.mp3" type="audio/mpeg"></audio>
+        </div>
+        <div class="centerContents points">$300</div>
+    </div>
+    <div class="item itemOption">
+        <div class="centerContents answer">Flute</div>
+        <div class="centerContents question"><div id="flute" class="questionPic"></div></div>
+        <div class="centerContents points">$100</div>
+    </div>
+    <div class="item itemOption">
+        <div class="centerContents answer">Woodwind</div>
+        <div class="centerContents question"><div id="clarinet" class="questionPic"></div></div>
+        <div class="centerContents points">$200</div>
+    </div>
+    <div class="item itemOption">
+        <div class="centerContents answer">Fortnite</div>
+        <div class="centerContents question">
+            <audio controls><source src="./music/test.mp3" type="audio/mpeg"></audio>
+        </div>
+        <div class="centerContents points">$300</div>
+    </div>
+    <div class="item itemOption">
+        <div class="centerContents answer">Trumpet</div>
+        <div class="centerContents question"><div id="trumpet" class="questionPic"></div></div>
+        <div class="centerContents points">$100</div>
+    </div>
+    <div class="item itemOption">
+        <div class="centerContents answer">Percussion</div>
+        <div class="centerContents question"><div id="bassDrum" class="questionPic"></div></div>
+        <div class="centerContents points">$200</div>
+    </div>
+    <div class="item itemOption">
+        <div class="centerContents answer">Remember Me</div>
+        <div class="centerContents question">
+            <audio controls><source src="./music/test.mp3" type="audio/mpeg"></audio>
+        </div>
+        <div class="centerContents points">$300</div>
+    </div>
+    <div class="item itemOption">
+        <div class="centerContents answer">Xylophone</div>
+        <div class="centerContents question"><div id="xylophone" class="questionPic"></div></div>
+        <div class="centerContents points">$100</div>
+    </div>
+    <div class="item itemOption">
+        <div class="centerContents answer">String</div>
+        <div class="centerContents question"><div id="cello" class="questionPic"></div></div>
+        <div class="centerContents points">$200</div>
+    </div>
+    <div class="item itemOption">
+        <div class="centerContents answer">How Far I'll Go</div>
+        <div class="centerContents question">
+            <audio controls><source src="./music/test.mp3" type="audio/mpeg"></audio>
+        </div>
+        <div class="centerContents points">$300</div>
+    </div>
+</div>
 <script type="text/javascript" src="./index.js"></script>
 </body>
 </html>

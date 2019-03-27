@@ -1,0 +1,55 @@
+.questionPic {
+    height: 99%;
+    width: 99%;
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+
+#guitar {
+    background-image: url(./img/guitar.jpg);
+}
+
+#flute{
+	background-image: url(./img/flute.jpg);
+}
+
+#trumpet{
+	background-image: url(./img/trumpet.jpg);
+}
+
+#xylophone{
+	background-image: url(./img/xylophone.jpg);
+}
+
+#trombone{
+	background-image: url(./img/trombone.jpg);
+}
+
+#clarinet{
+	background-image: url(./img/clarinet.jpg);
+}
+
+#bassDrum{
+	background-image: url(./img/bassDrum.jpg);
+}
+
+#cello{
+	background-image: url(./img/cello.jpg);
+}
+
+#smash{
+	background-image: url(./img/smash.jpg);
+}
+
+#fortnite{
+	background-image: url(./img/fortnite.jpg);
+}
+
+#rememberMe{
+	background-image: url(./img/rememberMe.jpg);
+}
+
+#howfarillgo{
+	background-image: url(./img/howfarillgo.jpg);
+}
